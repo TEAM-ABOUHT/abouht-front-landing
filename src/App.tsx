@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./Landing";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Landing from "./Landing"
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         </Routes>
       </div>
     </BrowserRouter>
-  );
-};
+  )
+}
 
-export default App;
+export default App
