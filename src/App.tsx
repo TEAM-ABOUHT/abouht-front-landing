@@ -3,7 +3,7 @@ import Landing from "./pages/Landing"
 import Team from "./pages/Team"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import Service from "./components/Service"
+import Service from "./pages/Service"
 
 const App = () => {
   return (
