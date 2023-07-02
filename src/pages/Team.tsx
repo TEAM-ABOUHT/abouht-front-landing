@@ -51,6 +51,7 @@ const ProfileContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: calc(100vh - 7.75rem);
 `
 
 const Team = (props: Props) => {
