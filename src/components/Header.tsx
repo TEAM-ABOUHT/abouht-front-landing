@@ -48,7 +48,7 @@ const MenuItem = styled(Link)`
 
 type Props = {}
 
-const NavigationBar = (props: Props) => {
+const Header = (props: Props) => {
   return (
     <NavContainer>
       <Nav>
@@ -63,7 +63,9 @@ const NavigationBar = (props: Props) => {
             <b>Abouht</b> Service
           </MenuItem>
           <MenuItem to="/preview">Preview</MenuItem>
-          <MenuItem to="/signin">Sign In/Up</MenuItem>
+          <MenuItem to="/about">
+            About <b>Abouht</b>
+          </MenuItem>
           <MenuItem to="/download">Download</MenuItem>
         </Menu>
       </Nav>
@@ -71,4 +73,4 @@ const NavigationBar = (props: Props) => {
   )
 }
 
-export default NavigationBar
+export default Header

@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Landing from "./pages/Landing"
 import Team from "./pages/Team"
-import NavigationBar from "./components/NavigationBar"
+import Header from "./components/Header"
 import Footer from "./components/Footer"
 
 const App = () => {
   return (
     <BrowserRouter>
-      <NavigationBar />
+      <Header />
       <div className="container">
         <Routes>
           <Route path="/" element={<Landing />} />
