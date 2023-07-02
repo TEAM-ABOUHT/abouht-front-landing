@@ -1,4 +1,3 @@
-import React from "react"
 import { styled } from "styled-components"
 
 const FooterContainer = styled.footer`
@@ -66,9 +65,7 @@ const Term = styled.li`
   }
 `
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <FooterContainer>
       <div className="p-footer__inner">

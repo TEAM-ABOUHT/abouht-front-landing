@@ -1,8 +1,5 @@
-import React from "react"
 import ProfileCard from "../components/ProfileCard"
 import styled from "styled-components"
-
-type Props = {}
 
 interface Member {
   role: string
@@ -54,7 +51,7 @@ const ProfileContainer = styled.div`
   height: calc(100vh - 7.75rem);
 `
 
-const Team = (props: Props) => {
+const Team = () => {
   return (
     <ProfileContainer>
       {members.map(member => {

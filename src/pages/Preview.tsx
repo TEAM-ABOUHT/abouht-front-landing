@@ -1,7 +1,4 @@
-import React from "react"
 import styled from "styled-components"
-
-type Props = {}
 
 const Container = styled.div`
   height: calc(100vh - 7.75rem);
@@ -57,7 +54,7 @@ const Card = styled.div`
   }
 `
 
-const Preview = (props: Props) => {
+const Preview = () => {
   return (
     <>
       <GradientOverlay />

@@ -1,4 +1,3 @@
-import React from "react"
 import { styled } from "styled-components"
 import ImgButton from "../components/ImgButton"
 import Arrow from "../components/Arrow"
@@ -91,9 +90,7 @@ const SectionTitle = styled.span`
   color: #f6f5f2;
 `
 
-type Props = {}
-
-const Landing = (props: Props) => {
+const Landing = () => {
   return (
     <>
       <Container>

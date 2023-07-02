@@ -1,4 +1,3 @@
-import React from "react"
 import { styled } from "styled-components"
 import { Link } from "react-router-dom"
 
@@ -46,9 +45,7 @@ const MenuItem = styled(Link)`
   text-decoration: none;
 `
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <NavContainer>
       <Nav>
