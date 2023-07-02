@@ -1,6 +1,10 @@
 import React from "react"
 import { styled } from "styled-components"
 
+const FooterContainer = styled.footer`
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+`
+
 const SiteGroupList = styled.div`
   display: flex;
   padding-bottom: 50px;
@@ -66,7 +70,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <footer className="p-footer p-footer--dark">
+    <FooterContainer>
       <div className="p-footer__inner">
         <SiteGroupList>
           <SiteGroup>
@@ -245,7 +249,7 @@ const Footer = (props: Props) => {
           </Term>
         </TermWrapper>
       </div>
-    </footer>
+    </FooterContainer>
   )
 }
 
