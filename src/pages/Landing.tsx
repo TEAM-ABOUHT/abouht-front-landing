@@ -15,6 +15,9 @@ const Title = styled.h1`
   font-weight: bold;
   letter-spacing: 0.1rem;
   color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 3.125rem;
+  }
 `
 
 const Line = styled.div`
@@ -29,6 +32,9 @@ const ButtonContainer = styled.div`
   gap: 3.5625rem;
   justify-content: center;
   margin: 2rem 0;
+  @media screen and (max-width: 768px) {
+    gap: 33px;
+  }
 `
 
 const Section = styled.section`
@@ -49,6 +55,10 @@ const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    width: 302px;
+    height: 640px;
+  }
 `
 
 const CardTo = styled.span`
@@ -58,6 +68,11 @@ const CardTo = styled.span`
   left: 42px;
   top: 42px;
   font-weight: 300;
+  @media screen and (max-width: 768px) {
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+  }
 `
 
 const CardContents = styled.div`
@@ -68,6 +83,11 @@ const CardContents = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    width: 278px;
+    height: 122px;
+  }
 `
 
 const CardFrom = styled.span`
@@ -76,6 +96,11 @@ const CardFrom = styled.span`
   bottom: 42px;
   right: 42px;
   position: absolute;
+  @media screen and (max-width: 768px) {
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+  }
 `
 
 const SectionSubtitle = styled.span`

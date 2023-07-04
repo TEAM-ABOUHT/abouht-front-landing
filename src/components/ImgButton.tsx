@@ -14,11 +14,21 @@ const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    width: 131px;
+    height: 22px;
+    font-size: 9px;
+  }
 `
 
 const ButtonImg = styled.img`
   width: 1rem;
   margin-right: 0.375rem;
+
+  @media screen and (max-width: 768px) {
+    width: 13px;
+  }
 `
 
 type Props = {
