@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Landing from "./pages/Landing"
 import Team from "./pages/Team"
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
 import Footer from "./components/Footer"
 import Service from "./pages/Service"
 import About from "./pages/About"
