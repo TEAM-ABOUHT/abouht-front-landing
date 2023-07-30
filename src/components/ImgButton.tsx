@@ -3,17 +3,22 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 const Button = styled.div`
-  width: 16rem;
-  height: 2.6875rem;
+  width: 212px;
+  height: 36px;
   background-color: #f6f5f2;
   box-shadow: 1px 1px 6px #00000029;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 15px;
   color: black;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  @media (max-width: 980px) {
+    width: 159px;
+    height: 27px;
+  }
 `
 
 const ButtonImg = styled.img`
@@ -22,16 +27,17 @@ const ButtonImg = styled.img`
 `
 
 type Props = {
-  src: string
+  src?: string
   href: string
   children: ReactNode
+  style?: React.CSSProperties
 }
 
 const ImgButton = (props: Props) => {
   return (
     <Link to={props.href} style={{ textDecoration: "none" }}>
-      <Button>
-        <ButtonImg src={props.src} alt="" />
+      <Button style={props.style}>
+        {props.src ? <ButtonImg src={props.src} alt="" /> : <></>}
         {props.children}
       </Button>
     </Link>
