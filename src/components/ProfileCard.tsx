@@ -1,10 +1,10 @@
 import { styled } from "styled-components"
 
 const Card = styled.div`
-  width: 330px;
-  padding: 53.5px 42.5px;
+  /* width: 330px; */
+  /* padding: 53.5px 42.5px; */
   text-align: center;
-  font-family: "Apple SD Gothic Neo", sans-serif;
+  font-family: var(--font-family);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@ type Props = {
   profile: string
   name: string
   introduction: string
+  email: string
   summary: string[]
 }
 
@@ -44,6 +45,8 @@ const ProfileCard = (props: Props) => {
       <Content style={{ marginBottom: "52px" }}>{props.name}</Content>
       <Content>소개</Content>
       <Content>{props.introduction}</Content>
+      <Content>이메일</Content>
+      <Content><a href={"mailto:" + props.email}>{props.email}</a></Content>
       <Content>약력</Content>
       {props.summary.map(i => {
         return <Content>{i}</Content>

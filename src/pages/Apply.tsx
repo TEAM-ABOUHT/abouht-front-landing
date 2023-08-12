@@ -31,7 +31,6 @@ const FormItem = styled.div`
 `
 
 const FormTitle = styled.span`
-  width: 120px;
   color: var(--text-color);
   font-size: 14px;
   display: block;
@@ -132,21 +131,27 @@ const Apply = () => {
       </FormItem>
       
       <FormItem>
+        <div>
       <FormTitle style={{ marginTop: "22px"}}>작가 한줄 소개</FormTitle>
-      <div style={{ color: "#fff", marginTop: "10px", fontSize: "11px"}}>200자 내외로 본인을 소개해주세요!</div>
+      <span style={{ color: "#fff", fontSize: "11px"}}>200자 내외로 작가님을 소개해주세요!</span>
+      </div>
       <FormTextArea></FormTextArea>
       </FormItem>
 
 		  <FormItem style={{flexDirection: "row", marginTop: "24px"}}>
-        <FormTitle>작품 제출</FormTitle>
+        <div>
+          <FormTitle>작품 제출 </FormTitle>
+          <span style={{ color: "#fff", fontSize: "11px"}}>작가님이 가지고 있는 작품을 보여주세요!</span>
+        </div>
         <FormButton>제출하기</FormButton>
       </FormItem>
 
-      <ImgButton href="/" style={{ width: "100%", margin: "30px 0" }}>
+      <ImgButton href="/" style={{ width: "calc(100% - 3rem)", margin: "30px auto" }}>
         작가 신청하기
       </ImgButton>
     </Container>
   )
 }
+
 
 export default Apply

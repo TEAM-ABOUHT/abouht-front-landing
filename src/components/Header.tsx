@@ -30,7 +30,7 @@ const Nav = styled.div`
     display: none;
 
     &.mobile {
-      display: flex;
+      display: block;
     }
   }
 `
@@ -74,7 +74,7 @@ const Header = () => {
         <span style={{color: "var(--text-color)", fontSize: "3rem", marginLeft: "1rem"}} onClick={() => setIsOpen(true)}>≡</span>
         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
         <Link to="/">
-          <Logo>로고</Logo>
+          <Logo style={{position: "absolute", top: "9px", left: "50vw", transform: "translateX(-28px)"}}>로고</Logo>
         </Link>
       </Nav>
     </NavContainer>

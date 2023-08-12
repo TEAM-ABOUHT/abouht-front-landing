@@ -95,7 +95,7 @@ const FormTextArea = styled.textarea`
 const UserApply = () => {
   return (
     <Container>
-      <Title>유저 사전 가입</Title>
+      <Title>독자 사전 가입</Title>
 
       <FormItem>
         <FormTitle>이름</FormTitle>

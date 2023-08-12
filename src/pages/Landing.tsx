@@ -218,9 +218,9 @@ const Landing = () => {
   return (
     <>
       <Container>
-        <Link to="/" style={{ margin: "0 auto" }} className="logo">
+        {/* <Link to="/" style={{ margin: "0 auto" }} className="logo">
           <Logo>로고</Logo>
-        </Link>
+        </Link> */}
         <div>
           {[...Array(6)].map((_, i) => (
             <Line key={i} />
@@ -346,8 +346,8 @@ const Landing = () => {
         </PagePreviewCaption>
       </ScrollAnimationSection>
       <ScrollAnimationSection>
-        <AuthorCard>asdf</AuthorCard>
-        <AuthorCard>asdf</AuthorCard>
+        <AuthorCard></AuthorCard>
+        <AuthorCard></AuthorCard>
         <TitleContainer style={{ marginTop: "0" }}>
           <SectionTitle>
             이런 글들과 작가님들이

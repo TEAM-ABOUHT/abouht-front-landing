@@ -1,11 +1,12 @@
 import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const SideBarWrap = styled.div`
   z-index: 5;
   padding: 12px;
   border-radius: 0 15px 15px 0;
-  background-color: #e7e4e1;
+  background-color: var(--bg-color-light);
   height: 100vh;
   width: 40vw;
   top: 0;
@@ -18,8 +19,24 @@ const SideBarWrap = styled.div`
   }
 `
 
+const MenuContainer = styled.ul`
+  text-decoration: none;
+`
+
+const MenuLink = styled(Link)`
+  text-decoration: none;
+`
+
 const Menu = styled.li`
-  margin: 30px 8px;
+  padding: 16px 12px;
+  list-style: none;
+  transition: 0.1s all ease;
+  color: #777;
+
+  &:hover {
+    color: #000;
+    /* font-weight: bold; */
+  }
 `
 
 const ExitMenu = styled.span`
@@ -72,20 +89,31 @@ const Sidebar = (props: Props) => {
       <span onClick={toggleSide}
         onKeyDown={toggleSide}
         style={{fontSize: "2rem"}}>
-        X
       </span>
-      <ul>
-        <Menu>Home</Menu>
-        <Menu>Abouht</Menu>
-        <Menu>Team</Menu>
-        <Menu>신청하기</Menu>
+      <MenuContainer>
+        <MenuLink to={'/'}>
+          <Menu>Home</Menu>
+        </MenuLink>
+        <MenuLink to={'/About'}>
+          <Menu>Abouht</Menu>
+        </MenuLink>
+        <MenuLink to={'/team'}>
+          <Menu>Team</Menu>
+        </MenuLink>
+        <MenuLink to={'/UserApply'}>
+          <Menu>독자 사전 가입하기</Menu>
+        </MenuLink>
+        
         <Menu>로그인</Menu>
         <Menu>회원가입</Menu>
+        <Menu>이벤트</Menu>
         <Menu>개인정보 처리방침</Menu>
-        <Menu>이용약관</Menu>
+        <MenuLink to={'/Term'}>
+          <Menu>이용약관</Menu>
+        </MenuLink>
         <Menu>상담하기[24시간]</Menu>
         <Menu>제휴문의</Menu>
-      </ul>
+      </MenuContainer>
     </SideBarWrap>
   );
 }
