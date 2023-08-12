@@ -11,6 +11,7 @@ import Apply from "./pages/Apply"
 import UserApply from "./pages/UserApply"
 import Launching from "./pages/Launching"
 import Term from "./pages/term/Term"
+import Release from "./pages/Release"
 
 const Container = styled.div`
   width: 980px;
@@ -27,6 +28,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/launching" element={<Launching />} />
+        <Route path="/release" element={<Release />}/>
+        <Route path="/apply" element={<Apply />} />
+        <Route path="/userapply" element={<UserApply />} />
         <Route path="*" element={
           <>
             <Header />
@@ -37,8 +41,6 @@ const App = () => {
                 <Route path="/service" element={<Service />} />
                 <Route path="/preview" element={<Preview />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/apply" element={<Apply />} />
-                <Route path="/userapply" element={<UserApply />} />
                 <Route path="/term" element={<Term />}/>
               </Routes>
             </Container>

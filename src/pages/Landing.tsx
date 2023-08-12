@@ -233,22 +233,17 @@ const Landing = () => {
         </Title>
         <div>
         <ButtonContainer>
-          <ImgButton
-            src="https://img.freepik.com/free-icon/google-play_318-566073.jpg"
-            href="https://google.com"
-          >
+          <ImgButton href="/release" src="https://img.freepik.com/free-icon/google-play_318-566073.jpg">
             Google Play
           </ImgButton>
-          <ImgButton
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/391px-Apple_logo_black.svg.png"
-            href="https://apple.com"
-          >
+          <ImgButton href="/release" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/391px-Apple_logo_black.svg.png">
             App Store
           </ImgButton>
+          
         </ButtonContainer>
-        <Link to="/apply" style={{textDecoration: "none"}}>
+        <Link to="/launching" style={{textDecoration: "none"}}>
         <ApplyButton>
-          작가 등록 바로가기
+          사전 등록 바로가기
         </ApplyButton>
         </Link>
         </div>

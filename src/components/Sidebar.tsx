@@ -8,7 +8,7 @@ const SideBarWrap = styled.div`
   border-radius: 0 15px 15px 0;
   background-color: var(--bg-color-light);
   height: 100vh;
-  width: 40vw;
+  width: 45vw;
   top: 0;
   position: fixed;
   transition: 0.5s ease;

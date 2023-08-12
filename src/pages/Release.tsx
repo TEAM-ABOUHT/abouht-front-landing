@@ -53,7 +53,7 @@ const ButtonContainer = styled.div`
 
 type Props = {}
 
-const Launching = (props: Props) => {
+const Release = (props: Props) => {
   return (
     <Container>
       <Link to="/" style={{ margin: "0 auto" }} className="logo">
@@ -65,9 +65,9 @@ const Launching = (props: Props) => {
         ))}
       </div>
       <Title>
-        Abouht 런칭
+        Abouht 런칭까지 얼마 남지 않았어요!
         <br />
-        0/00
+        사전 등록 하시는건 어떠세요?
       </Title>
 
       <ButtonContainer>
@@ -77,7 +77,7 @@ const Launching = (props: Props) => {
             href="/userapply"
             style={{marginTop: "28px"}}
           >
-            독자 사전 등록하기
+            유저 사전 가입하기
           </ImgButton>
         </div>
         <div>
@@ -99,5 +99,4 @@ const Launching = (props: Props) => {
   )
 }
 
-export default Launching
-
+export default Release

@@ -20,7 +20,7 @@ const SiteGroup = styled.ul`
   width: 170px;
   color: var(--text-color);
   list-style: none;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 20px;
   box-sizing: border-box;
 `
@@ -40,7 +40,7 @@ const SiteGroupItem = styled.li`
 
 const Address = styled.address`
   color: var(--text-color);
-  font-size: 10px;
+  font-size: 13px;
   line-height: 20px;
   font-style: normal;
 `
@@ -49,7 +49,7 @@ const AddressCompanyName = styled.strong`
   display: block;
   padding-bottom: 16px;
   color: var(--text-color);
-  font-size: 10px;
+  font-size: 13px;
 `
 
 const TermWrapper = styled.ul`
@@ -65,7 +65,7 @@ const TermWrapper = styled.ul`
 
 const Term = styled.li`
   a {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 18px;
     text-decoration: none;
     color: var(--text-color);
@@ -77,117 +77,6 @@ const Footer = () => {
     <FooterContainer>
       <FooterContents>
         <div className="p-footer__inner">
-          <SiteGroupList>
-            <SiteGroup>
-              <li>
-                <SiteGroupTitle>서비스</SiteGroupTitle>
-              </li>
-              <SiteGroupItem>
-                <a href="https://toss.im/notice">공지사항</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://support.toss.im/faq">자주 묻는 질문</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://toss.im/cert">공동인증서 관리</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="http://support.toss.im/suspend">계정 일시잠금</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://support.toss.im">고객센터</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://brand.toss.im/">브랜드 리소스센터</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://privacy.toss.im">토스의 개인정보 보호</a>
-              </SiteGroupItem>
-            </SiteGroup>
-            <SiteGroup>
-              <li>
-                <SiteGroupTitle>회사</SiteGroupTitle>
-              </li>
-              <SiteGroupItem>
-                <a href="https://toss.im/team">회사 소개</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://tosspayments.com/">토스페이먼츠</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://toss.im/insurance">토스인슈어런스</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://tossinvest.com/">토스증권</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://tosscx.com">토스씨엑스</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://www.tossbank.com/">토스뱅크</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://tossplace.com/?referrer=toss_recruit_footer">
-                  토스플레이스
-                </a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://toss.im/career">채용</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://blog.toss.im/">블로그</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://toss.im/announcement">공고</a>
-              </SiteGroupItem>
-            </SiteGroup>
-            <SiteGroup>
-              <li>
-                <SiteGroupTitle>문의</SiteGroupTitle>
-              </li>
-              <SiteGroupItem>
-                <a href="mailto:partnership@toss.im">사업 제휴</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://tossshopping.oopy.io/">공동구매 입점문의</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://ads-platform.toss.im/login">광고 문의</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://toss.im/tosscert">인증 사업 문의</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="mailto:support@toss.im">마케팅·PR</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="mailto:ir@toss.im">IR</a>
-              </SiteGroupItem>
-            </SiteGroup>
-            <SiteGroup>
-              <li>
-                <SiteGroupTitle>고객센터</SiteGroupTitle>
-              </li>
-              <SiteGroupItem>
-                <a href="tel:1599-4905">전화: 1599-4905 (24시간 연중무휴)</a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="mailto:support@toss.im">
-                  이메일(고객전용): support@toss.im
-                </a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="mailto:safe@toss.im">
-                  이메일(외부기관전용): safe@toss.im
-                </a>
-              </SiteGroupItem>
-              <SiteGroupItem>
-                <a href="https://support.toss.im/customer-complaint">
-                  민원 접수
-                </a>
-              </SiteGroupItem>
-            </SiteGroup>
-          </SiteGroupList>
           <Address>
             <AddressCompanyName>㈜비바리퍼블리카</AddressCompanyName>
             사업자 등록번호 : 120-88-01280 | 대표 : 이승건 <br />
