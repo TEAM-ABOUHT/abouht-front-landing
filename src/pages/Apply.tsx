@@ -125,7 +125,7 @@ const Apply = () => {
         <FormInput></FormInput>
       </FormItem>
 
-      <FormTitle style={{ marginTop: "22px", left-margin :"" }}>작가 한줄 소개</FormTitle>
+      <FormTitle style={{ marginTop: "22px"}}>작가 한줄 소개</FormTitle>
       <FormTextArea></FormTextArea>
 		  
 	  <FormTitle style={{ marginTop: "22px" }}>작품 제출</FormTitle>
