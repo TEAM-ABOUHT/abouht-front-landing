@@ -8,6 +8,9 @@ import Service from "./pages/Service"
 import About from "./pages/About"
 import Preview from "./pages/Preview"
 import Apply from "./pages/Apply"
+import UserApply from "./pages/UserApply"
+import Launching from "./pages/Launching"
+import Term from "./pages/term/Term"
 
 const Container = styled.div`
   width: 980px;
@@ -22,18 +25,27 @@ const Container = styled.div`
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Container>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/preview" element={<Preview />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/apply" element={<Apply />} />
-        </Routes>
-      </Container>
-      <Footer />
+      <Routes>
+        <Route path="/launching" element={<Launching />} />
+        <Route path="*" element={
+          <>
+            <Header />
+            <Container>
+              <Routes>
+                <Route path="/" element={<Landing />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/service" element={<Service />} />
+                <Route path="/preview" element={<Preview />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/apply" element={<Apply />} />
+                <Route path="/userapply" element={<UserApply />} />
+                <Route path="/term" element={<Term />}/>
+              </Routes>
+            </Container>
+            <Footer />
+          </>
+        } />
+      </Routes>
     </BrowserRouter>
   )
 }

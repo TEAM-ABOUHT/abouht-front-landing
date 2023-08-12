@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
 
 const FooterContainer = styled.footer`
-  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding-top: 4rem;
 `
@@ -18,7 +18,7 @@ const SiteGroupList = styled.div`
 
 const SiteGroup = styled.ul`
   width: 170px;
-  color: #f6f5f2;
+  color: var(--text-color);
   list-style: none;
   font-size: 10px;
   line-height: 20px;
@@ -27,19 +27,19 @@ const SiteGroup = styled.ul`
 
 const SiteGroupTitle = styled.div`
   padding-bottom: 5px;
-  color: #f6f5f2;
+  color: var(--text-color);
 `
 
 const SiteGroupItem = styled.li`
   a {
     display: block;
     text-decoration: none;
-    color: #f6f5f2;
+    color: var(--text-color);
   }
 `
 
 const Address = styled.address`
-  color: #f6f5f2;
+  color: var(--text-color);
   font-size: 10px;
   line-height: 20px;
   font-style: normal;
@@ -48,7 +48,7 @@ const Address = styled.address`
 const AddressCompanyName = styled.strong`
   display: block;
   padding-bottom: 16px;
-  color: #f6f5f2;
+  color: var(--text-color);
   font-size: 10px;
 `
 
@@ -68,7 +68,7 @@ const Term = styled.li`
     font-size: 10px;
     line-height: 18px;
     text-decoration: none;
-    color: #f6f5f2;
+    color: var(--text-color);
   }
 `
 

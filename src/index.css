@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "GmarketSans";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
     format("woff");
@@ -20,11 +20,46 @@
     format("woff");
   font-weight: bold;
   font-style: normal;
+} */
+
+/* @import url('https://webfontworld.github.io/MaruBuri/MaruBuri.css'); */
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* DARK */
+  --bg-color: #162940;
+  --bg-color-light: #F6F5F2;
+  --text-color: #f6f5f2;
+  --text-color-light: #162940;
+  --subtitle-color: #d3d3d3;
+  --btn-color: #ffffff;
+  --form-color: #142338;
+  --btn-color-dark: #101c2c;
+  --font-family: "RIDIBatang";
+  --line-color: #717171;
+  --card-color: #f8f8f8;
+
+  /* LIGHT */
+  /* --bg-color: #FBFCFB;
+  --text-color: #162940;
+  --subtitle-color: #162940;
+  --btn-color: #ffffff;
+  --form-color: #142338;
+  --btn-color-dark: #101c2c;
+  --font-family: "RIDIBatang";
+  --line-color: #717171;
+  --card-color: #f8f8f8; */
 }
 
 body {
-  font-family: "GmarketSans";
-  background-color: #162940;
+  font-family: 'RIDIBatang';
+  background-color: var(--bg-color);
 }
 
 * {

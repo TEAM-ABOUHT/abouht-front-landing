@@ -10,7 +10,7 @@ const NavContainer = styled.nav`
   height: 74px;
   top: 0;
   z-index: 100;
-  background-color: #162840;
+  background-color: var(--bg-color);
 `
 
 const Nav = styled.div`
@@ -41,14 +41,14 @@ const Logo = styled.div`
   font-size: 13px;
   text-align: center;
   line-height: 50px;
-  color: #162840;
-  background-color: #f6f5f2;
+  color: var(--bg-color);
+  background-color: var(--text-color);
   margin: 0 auto;
 `
 
 const MenuItem = styled(Link)`
   padding: 4px 12px;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 `
 
@@ -64,9 +64,6 @@ const Header = () => {
         <MenuItem to="/team">
           <b>Abouht</b> Team
         </MenuItem>
-        <MenuItem to="/service">
-          <b>Abouht</b> Service
-        </MenuItem>
         <MenuItem to="/preview">Preview</MenuItem>
         <MenuItem to="/about">
           About <b>Abouht</b>
@@ -74,6 +71,7 @@ const Header = () => {
         <MenuItem to="/download">Download</MenuItem>
       </Nav>
       <Nav className="mobile">
+        <span style={{color: "var(--text-color)", fontSize: "3rem", marginLeft: "1rem"}} onClick={() => setIsOpen(true)}>≡</span>
         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
         <Link to="/">
           <Logo>로고</Logo>
