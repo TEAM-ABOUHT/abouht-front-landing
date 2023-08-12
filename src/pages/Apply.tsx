@@ -36,6 +36,12 @@ const FormTitle = styled.span`
   font-size: 18px;
   display: block;
 `
+const FormTitle1 = styled.span`
+  width: 160px; 
+  color: f6f5f2;
+  font-size: 18px; 
+  display:block;
+`
 
 const FormInput = styled.input`
   color: #f6f5f2;
@@ -124,13 +130,17 @@ const Apply = () => {
         <FormTitle>성별</FormTitle>
         <FormInput></FormInput>
       </FormItem>
-
+      
       <FormTitle style={{ marginTop: "22px"}}>작가 한줄 소개</FormTitle>
+      <div style={{ color: "#fff", marginTop: "10px", fontSize: "11px"}}>[200자 내외로 본인을 소개해주세요!</div>
       <FormTextArea></FormTextArea>
-		  
-	  <FormTitle style={{ marginTop: "22px" }}>작품 제출</FormTitle>
+		  <FormItem>
+        <FormTitle style={{ marginTop: "22px" }}>작품 제출</FormTitle>
+        <FormButton style={{ marginTop: "22px" }}>제출하기</FormButton>
+        <div></div>
+      </FormItem>
 
-      <ImgButton href="/" style={{ width: "100%", margin: "32px 0" }}>
+      <ImgButton href="/" style={{ width: "100%", margin: "32px" }}>
         작가 신청하기
       </ImgButton>
     </Container>
