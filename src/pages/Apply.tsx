@@ -1,5 +1,5 @@
-import { styled } from 'styled-components'
-import ImgButton from '../components/ImgButton'
+import { styled } from "styled-components"
+import ImgButton from "../components/ImgButton"
 
 const Container = styled.div`
   width: 535px;
@@ -14,7 +14,7 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 22px;
   text-align: center;
-  color: #F6F5F2;
+  color: #f6f5f2;
   margin-top: 45px;
   margin-bottom: 35px;
 `
@@ -31,7 +31,7 @@ const FormItem = styled.div`
 `
 
 const FormTitle = styled.span`
-  width: 105px;
+  width: 120px;
   color: #f6f5f2;
   font-size: 18px;
   display: block;
@@ -125,11 +125,14 @@ const Apply = () => {
         <FormInput></FormInput>
       </FormItem>
 
-      <FormTitle style={{marginTop: "22px"}}>작가 소개</FormTitle>
+      <FormTitle style={{ marginTop: "22px", left-margin :"" }}>작가 한줄 소개</FormTitle>
       <FormTextArea></FormTextArea>
+		  
+	  <FormTitle style={{ marginTop: "22px" }}>작품 제출</FormTitle>
 
-      <ImgButton href="/" style={{width: "100%", margin: "32px 0"}}>작가 신청하기</ImgButton>
-
+      <ImgButton href="/" style={{ width: "100%", margin: "32px 0" }}>
+        작가 신청하기
+      </ImgButton>
     </Container>
   )
 }

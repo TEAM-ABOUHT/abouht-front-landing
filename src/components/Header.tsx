@@ -1,5 +1,7 @@
 import { styled } from "styled-components"
 import { Link } from "react-router-dom"
+import Sidebar from "./Sidebar"
+import { useState } from "react"
 
 const NavContainer = styled.nav`
   position: -webkit-sticky;
@@ -9,20 +11,6 @@ const NavContainer = styled.nav`
   top: 0;
   z-index: 100;
   background-color: #162840;
-  
-  .mobile {
-    display: none;
-  }
-
-  @media (max-width: 980px) {
-    .mobile {
-      display: block;
-    }
-    
-    .desktop {
-      display: none;
-    }
-  }
 `
 
 const Nav = styled.div`
@@ -33,6 +21,18 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  &.mobile {
+    display: none;
+  }
+
+  @media (max-width: 980px) {
+    display: none;
+
+    &.mobile {
+      display: flex;
+    }
+  }
 `
 
 const Logo = styled.div`
@@ -53,12 +53,14 @@ const MenuItem = styled(Link)`
 `
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
   return (
     <NavContainer>
       <Nav className="desktop">
-        {/*<Link to="/">
+        <Link to="/">
           <Logo>로고</Logo>
-        </Link>*/}
+        </Link>
         <MenuItem to="/team">
           <b>Abouht</b> Team
         </MenuItem>
@@ -72,6 +74,7 @@ const Header = () => {
         <MenuItem to="/download">Download</MenuItem>
       </Nav>
       <Nav className="mobile">
+        <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
         <Link to="/">
           <Logo>로고</Logo>
         </Link>
