@@ -42,7 +42,7 @@ const members: Member[] = [
     role: "Developer",
     profile: yulwon,
     name: "이율원",
-    introduction: "ㅁㄴㅇㄹ",
+    introduction: "여자친구 구함",
     email: "me@sterd.dev",
     summary: [
       "건국대학교 컴퓨터공학부 22학번 재학",

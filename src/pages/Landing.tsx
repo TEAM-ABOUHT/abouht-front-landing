@@ -323,19 +323,19 @@ const Landing = () => {
             다른 카테고리
           </SectionSubtitle>
           <SectionTitle>
-            이 곳엔 다른 강점들
+            당신의 드로잉이 
             <br />
-            적기
+            작품으로
           </SectionTitle>
           <SectionSubtitle>
-            글에서 빠질 수 없는 요소, 일러스트
+            빠질 수 없는 요소 일러스트.
             <br />
-            작가가 되고, 작가를 찾아보세요.
+            손끝에서 시작된 나의 예술
           </SectionSubtitle>
         </TitleContainer>
         <PagePreview></PagePreview>
         <PagePreviewCaption style={{ textAlign: "right" }}>
-          
+          {/* 글 넣어야함 */} 
         </PagePreviewCaption>
       </ScrollAnimationSection>
       <ScrollAnimationSection>
@@ -343,11 +343,11 @@ const Landing = () => {
         <AuthorCard></AuthorCard>
         <TitleContainer style={{ marginTop: "0" }}>
           <SectionTitle>
-            이런 글들과 작가님들이
+            좋아하는 작가가 되고,
             <br />
-            있어요옹
+            좋아하는 독자가 되어보세요.
           </SectionTitle>
-          <SectionSubtitle>비문학</SectionSubtitle>
+          {/* <SectionSubtitle> 여긴 뭐 넣지 ?</SectionSubtitle> */}
         </TitleContainer>
       </ScrollAnimationSection>
     </div>
