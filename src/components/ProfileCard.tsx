@@ -9,17 +9,23 @@ const Card = styled.div`
   align-items: center;
   color: var(--text-color-light);
   border-radius: 0.6rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.375rem 0.625rem;
+  margin-top: 110px;
 `
 
 const Profile = styled.img`
   width: 180px;
   height: 180px;
+  margin-top: -110px;
   margin-bottom: 26px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
 `
 
 const Name = styled.h1`
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 `

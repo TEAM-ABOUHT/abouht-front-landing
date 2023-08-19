@@ -21,7 +21,7 @@ const CardContainer = styled.div`
   }
 
   & div {
-    transition: 0.1s all ease;
+    transition: 0.25s all ease;
   }
 
   & .first {
@@ -81,7 +81,7 @@ const Preview = () => {
       let newClassNames = [...refClassNames.current]
       newClassNames.unshift(newClassNames.pop()!)
       setClassNames(newClassNames)
-    }, 10)
+    }, 1500)
   }, [])
 
   useEffect(() => {

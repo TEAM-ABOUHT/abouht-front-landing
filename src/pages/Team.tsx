@@ -17,7 +17,7 @@ const members: Member[] = [
     profile:
       "https://ca.slack-edge.com/T05DJDV4ZCG-U05CE6VMQPR-36a38f0bf37f-512",
     name: "김수빈",
-    introduction: "세상을 바꾸고 싶습니다.",
+    introduction: "남자친구 구함",
     email: "dal5505@naver.com",
     summary: [
       "인지지능 자연어처리 연구실 학부연구생 (2022.03 - 2022.09)",
