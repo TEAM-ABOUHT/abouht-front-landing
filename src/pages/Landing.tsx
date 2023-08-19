@@ -216,7 +216,7 @@ const Logo = styled.div`
 
 const Landing = () => {
   return (
-    <>
+    <div style={{overflow: "hidden"}}>
       <Container>
         {/* <Link to="/" style={{ margin: "0 auto" }} className="logo">
           <Logo>로고</Logo>
@@ -330,14 +330,12 @@ const Landing = () => {
           <SectionSubtitle>
             글에서 빠질 수 없는 요소, 일러스트
             <br />
-            작가가 되고, 작가를 찾아보세요 어쩌구
+            작가가 되고, 작가를 찾아보세요.
           </SectionSubtitle>
         </TitleContainer>
         <PagePreview></PagePreview>
         <PagePreviewCaption style={{ textAlign: "right" }}>
-          여기엔 일러스트가 글에 왜 필요하고 중요한지
-          <br />
-          Or 왜 이 앱에 일러스트를 올려야하는지같은 간단한 부가적인 설명
+          
         </PagePreviewCaption>
       </ScrollAnimationSection>
       <ScrollAnimationSection>
@@ -352,7 +350,7 @@ const Landing = () => {
           <SectionSubtitle>비문학</SectionSubtitle>
         </TitleContainer>
       </ScrollAnimationSection>
-    </>
+    </div>
   )
 }
 

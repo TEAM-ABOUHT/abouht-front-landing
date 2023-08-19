@@ -68,7 +68,7 @@ const Header = () => {
         <MenuItem to="/about">
           About <b>Abouht</b>
         </MenuItem>
-        <MenuItem to="/download">Download</MenuItem>
+        <MenuItem to="/support">고객지원</MenuItem>
       </Nav>
       <Nav className="mobile">
         <span style={{color: "var(--text-color)", fontSize: "3rem", marginLeft: "1rem"}} onClick={() => setIsOpen(true)}>≡</span>

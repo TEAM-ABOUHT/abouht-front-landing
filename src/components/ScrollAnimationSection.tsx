@@ -24,14 +24,19 @@ const Section = styled.section`
 `
 
 type Props = {
-  children: React.ReactNode,
+  children: React.ReactNode
   isCenter?: boolean
 }
 
 const ScrollAnimationSection = (props: Props) => {
   const { ref, isInViewport } = useScrollAnimation()
   return (
-    <Section ref={ref} className={(props.isCenter ? "center " : "") + (isInViewport ? "frame-in " : "")}>
+    <Section
+      ref={ref}
+      className={
+        (props.isCenter ? "center " : "") + (isInViewport ? "frame-in " : "")
+      }
+    >
       {props.children}
     </Section>
   )

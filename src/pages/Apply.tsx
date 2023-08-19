@@ -12,7 +12,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   color: var(--bg-color);
@@ -23,8 +23,6 @@ const Title = styled.h1`
 const FormItem = styled.div`
   display: flex;
   flex-direction: column;
-  /* height: 64px; */
-  /* border-bottom: 1px solid rgba(112, 112, 112, 0.2); */
   padding: 8px 0;
   @media (max-width: 980px) {
     padding: 8px 1.5rem;
@@ -33,7 +31,7 @@ const FormItem = styled.div`
 
 const FormTitle = styled.span`
   color: var(--bg-color);
-  font-size: 14px;
+  font-size: 1rem;
   display: block;
 `
 
@@ -43,13 +41,17 @@ const FormInput = styled.input`
   border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0.375rem 0.625rem;
   border-radius: 0.4rem;
-  /* width: 274px; */
-  /* height: 25px; */
   font-size: 16px;
   font-family: var(--font-family);
   padding: 8px 12px;
   margin: 8px 0;
-  transition: 0.5s all ease;
+  transition: 0.2s all ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    transition: 0.2s all ease;
+  }
 `
 
 const FormAvailable = styled.span`
@@ -90,68 +92,76 @@ const FormTextArea = styled.textarea`
 
 const Apply = () => {
   return (
-    <div style={{backgroundColor: "var(--bg-color-light)"}}>
-    <Container>
-      <Title>작가 신청</Title>
+    <div style={{ backgroundColor: "var(--bg-color-light)" }}>
+      <Container>
+        <Title>작가 신청</Title>
 
-      <FormItem>
-        <FormInput placeholder="이메일"></FormInput>
-        <FormAvailable>사용 가능 여부</FormAvailable>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="이메일"></FormInput>
+          <FormAvailable>사용 가능 여부</FormAvailable>
+        </FormItem>
 
-      <FormItem>
-        <FormInput type="password" placeholder="비밀번호"></FormInput>
-        <FormAvailable>사용 가능 여부</FormAvailable>
-      </FormItem>
+        <FormItem>
+          <FormInput type="password" placeholder="비밀번호"></FormInput>
+          <FormAvailable>사용 가능 여부</FormAvailable>
+        </FormItem>
 
-      <FormItem>
-        <FormInput placeholder="이름"></FormInput>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="이름"></FormInput>
+        </FormItem>
 
-      <FormItem>
-        <FormInput placeholder="필명"></FormInput>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="필명"></FormInput>
+        </FormItem>
 
-      <FormItem>
-        <FormInput placeholder="생년월일"></FormInput>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="생년월일"></FormInput>
+        </FormItem>
 
-      <FormItem>
-        <FormInput placeholder="전화번호"></FormInput>
-        <FormButton>인증번호 발송하기</FormButton>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="전화번호"></FormInput>
+          <FormButton>인증번호 발송하기</FormButton>
+        </FormItem>
 
-      <FormItem>
-        <FormInput placeholder="인증번호"></FormInput>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="인증번호"></FormInput>
+        </FormItem>
 
-      <FormItem>
-        <FormInput placeholder="성별"></FormInput>
-      </FormItem>
-      
-      <FormItem>
-        <div>
-      <FormTitle style={{ marginTop: "22px"}}>작가 한줄 소개</FormTitle>
-      <span style={{ color: "#000", fontSize: "11px"}}>200자 내외로 작가님을 소개해주세요!</span>
-      </div>
-      <FormTextArea></FormTextArea>
-      </FormItem>
+        <FormItem>
+          <FormInput placeholder="성별"></FormInput>
+        </FormItem>
 
-		  <FormItem style={{flexDirection: "row", marginTop: "24px"}}>
-        <div>
-          <FormTitle>작품 제출 </FormTitle>
-          <span style={{ color: "#000", fontSize: "11px"}}>작가님이 가지고 있는 작품을 보여주세요!<br/>.PDF 또는.docx로 부탁드려요 :D </span>
-        </div>
-        <FormButton>제출하기</FormButton>
-      </FormItem>
+        <FormItem>
+          <div>
+            <FormTitle style={{ marginTop: "22px" }}>작가 한줄 소개</FormTitle>
+            <span style={{ color: "#000", fontSize: "12px" }}>
+              200자 내외로 작가님을 소개해주세요!
+            </span>
+          </div>
+          <FormTextArea></FormTextArea>
+        </FormItem>
 
-      <ImgButton href="/" style={{ width: "calc(100% - 3rem)", margin: "30px auto" }}>
-        작가 신청하기
-      </ImgButton>
-    </Container>
+        <FormItem style={{ flexDirection: "row", marginTop: "24px" }}>
+          <div>
+            <FormTitle>작품 제출 </FormTitle>
+            <span style={{ color: "#000", fontSize: "12px" }}>
+              작가님이 가지고 있는 작품을 보여주세요!
+              <br />
+              .PDF 또는.docx로 부탁드려요 :D{" "}
+            </span>
+          </div>
+          <FormButton>제출하기</FormButton>
+        </FormItem>
+
+        <ImgButton
+          href="/"
+          style={{ width: "calc(100% - 3rem)", margin: "30px auto" }}
+        >
+          작가 신청하기
+        </ImgButton>
+      </Container>
     </div>
   )
 }
-
 
 export default Apply

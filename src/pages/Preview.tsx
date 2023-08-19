@@ -54,21 +54,25 @@ const CardContainer = styled.div`
 const Card = styled.div`
   position: absolute;
   background-color: #f8f8f8;
-    box-shadow: 3px 3px 6px #00000029;
+  box-shadow: 3px 3px 6px #00000029;
   border-radius: 45px;
-
+  font-size: 5rem;
 `
 
 const Preview = () => {
+  const cardContents = ["1", "2", "3", "4", "5"]
+
+  useEffect(() => {
+
+  }, [cardContents])
+
   return (
     <>
       <Container>
         <CardContainer>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {cardContents.map((value) => {
+            return <Card>{value}</Card>
+          })}
         </CardContainer>
       </Container>
     </>

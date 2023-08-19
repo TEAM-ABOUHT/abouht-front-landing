@@ -12,6 +12,7 @@ import UserApply from "./pages/UserApply"
 import Launching from "./pages/Launching"
 import Term from "./pages/term/Term"
 import Release from "./pages/Release"
+import ScrollToTop from "./hooks/ScrollToTop"
 
 const Container = styled.div`
   width: 980px;
@@ -26,27 +27,31 @@ const Container = styled.div`
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/launching" element={<Launching />} />
-        <Route path="/release" element={<Release />}/>
+        <Route path="/release" element={<Release />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/userapply" element={<UserApply />} />
-        <Route path="*" element={
-          <>
-            <Header />
-            <Container>
-              <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/service" element={<Service />} />
-                <Route path="/preview" element={<Preview />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/term" element={<Term />}/>
-              </Routes>
-            </Container>
-            <Footer />
-          </>
-        } />
+        <Route
+          path="*"
+          element={
+            <>
+              <Header />
+              <Container>
+                <Routes>
+                  <Route path="/" element={<Landing />} />
+                  <Route path="/team" element={<Team />} />
+                  <Route path="/service" element={<Service />} />
+                  <Route path="/preview" element={<Preview />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/term" element={<Term />} />
+                </Routes>
+              </Container>
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </BrowserRouter>
   )

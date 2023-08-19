@@ -66,8 +66,9 @@ const Launching = (props: Props) => {
       </div>
       <Title>
         Abouht 런칭
-        <br />
-        0/00
+        <br /> 
+        {/* D-100 스크립트짜야함 */}
+		  D-100
       </Title>
 
       <ButtonContainer>

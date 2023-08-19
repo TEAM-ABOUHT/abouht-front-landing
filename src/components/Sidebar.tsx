@@ -106,7 +106,7 @@ const Sidebar = (props: Props) => {
         
         <Menu>로그인</Menu>
         <Menu>회원가입</Menu>
-        <Menu>이벤트</Menu>
+        <Menu>이달의 이벤트</Menu>
         <Menu>개인정보 처리방침</Menu>
         <MenuLink to={'/Term'}>
           <Menu>이용약관</Menu>

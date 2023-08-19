@@ -1,31 +1,42 @@
 import { styled } from "styled-components"
 
 const Card = styled.div`
-  /* width: 330px; */
-  /* padding: 53.5px 42.5px; */
+  background-color: var(--card-color);
   text-align: center;
   font-family: var(--font-family);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: var(--text-color-light);
+  border-radius: 0.6rem;
+  padding: 1rem;
 `
 
 const Profile = styled.img`
-  width: 179px;
-  height: 229px;
+  width: 180px;
+  height: 180px;
   margin-bottom: 26px;
 `
 
-const Role = styled.span`
-  font-size: 16px;
+const Name = styled.h1`
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+`
+
+const Title = styled.h2`
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 `
 
 const Content = styled.span`
   font-size: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 1rem;
+
+  a {
+    color: var(--text-color-light);
+  }
 `
 
 type Props = {
@@ -40,14 +51,14 @@ type Props = {
 const ProfileCard = (props: Props) => {
   return (
     <Card>
-      <Role>{props.role}</Role>
       <Profile src={props.profile}></Profile>
-      <Content style={{ marginBottom: "52px" }}>{props.name}</Content>
-      <Content>소개</Content>
+      <Name>{props.name}</Name>
+      <Content>{props.role}</Content>
+      <Title>소개</Title>
       <Content>{props.introduction}</Content>
-      <Content>이메일</Content>
+      <Title>이메일</Title>
       <Content><a href={"mailto:" + props.email}>{props.email}</a></Content>
-      <Content>약력</Content>
+      <Title>약력</Title>
       {props.summary.map(i => {
         return <Content>{i}</Content>
       })}

@@ -29,14 +29,14 @@ const Line = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 66px;
+  font-size: 45px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1rem;
   color: var(--text-color-light);
 
   @media (max-width: 980px) {
-    font-size: 50px;
+    font-size: 28px;
   }
 `
 
@@ -65,9 +65,11 @@ const Release = (props: Props) => {
         ))}
       </div>
       <Title>
-        Abouht 런칭까지 얼마 남지 않았어요!
+        Abouht 런칭까지
+		<br/>
+		얼마 남지 않았어요!
         <br />
-        사전 등록 하시는건 어떠세요?
+        사전 등록 하는건 어떠세요?
       </Title>
 
       <ButtonContainer>
@@ -77,7 +79,7 @@ const Release = (props: Props) => {
             href="/userapply"
             style={{marginTop: "28px"}}
           >
-            유저 사전 가입하기
+            유저 사전 등록하기
           </ImgButton>
         </div>
         <div>

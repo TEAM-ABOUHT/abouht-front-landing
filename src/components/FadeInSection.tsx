@@ -6,18 +6,25 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   opacity: 0;
   transition: 1s all cubic-bezier(0, 0, 0.2, 1);
   transform: translate3d(0, 25%, 0);
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   &.frame-in {
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
   }
 `
 
