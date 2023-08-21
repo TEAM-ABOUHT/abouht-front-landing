@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -15,34 +16,42 @@ const CardContainer = styled.div`
   width: 980px;
   overflow: hidden;
 
-  & div:nth-child(1) {
+  @media (max-width: 980px) {
+    width: 100vw;
+  }
+
+  & div {
+    transition: 0.25s all ease;
+  }
+
+  & .first {
     width: 224px;
     height: 448px;
     transform: translateX(-380px);
     z-index: 1;
     opacity: 0.7;
   }
-  & div:nth-child(2) {
+  & .second {
     width: 283px;
     height: 567px;
     transform: translateX(-200px);
     z-index: 2;
     opacity: 0.9;
   }
-  & div:nth-child(3) {
+  & .third {
     width: 353px;
     height: 708px;
     z-index: 3;
     box-shadow: 0px 10px 6px #00000029;
   }
-  & div:nth-child(4) {
+  & .fourth {
     width: 283px;
     height: 567px;
     transform: translateX(200px);
     z-index: 2;
     opacity: 0.9;
   }
-  & div:nth-child(5) {
+  & .fifth {
     width: 224px;
     height: 448px;
     transform: translateX(380px);
@@ -57,21 +66,34 @@ const Card = styled.div`
   box-shadow: 3px 3px 6px #00000029;
   border-radius: 45px;
   font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const Preview = () => {
-  const cardContents = ["1", "2", "3", "4", "5"]
+  const contents = ["1", "2", "3", "4", "5"]
+  const [classNames, setClassNames] = useState<string[]>(["first", "second", "third", "fourth", "fifth"])
+  const refClassNames = useRef<string[]>(["first", "second", "third", "fourth", "fifth"])
+  
+  useEffect(() => {
+    setInterval(() => {
+      let newClassNames = [...refClassNames.current]
+      newClassNames.unshift(newClassNames.pop()!)
+      setClassNames(newClassNames)
+    }, 1500)
+  }, [])
 
   useEffect(() => {
-
-  }, [cardContents])
+    refClassNames.current = classNames
+  }, [classNames])
 
   return (
     <>
       <Container>
         <CardContainer>
-          {cardContents.map((value) => {
-            return <Card>{value}</Card>
+          {classNames.map((value, index) => {
+            return <Card className={value}>{contents[index]}</Card>
           })}
         </CardContainer>
       </Container>

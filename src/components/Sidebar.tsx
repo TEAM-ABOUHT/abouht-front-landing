@@ -95,24 +95,17 @@ const Sidebar = (props: Props) => {
           <Menu>Home</Menu>
         </MenuLink>
         <MenuLink to={'/About'}>
-          <Menu>Abouht</Menu>
+          <Menu><b>About</b> Abouht</Menu>
         </MenuLink>
         <MenuLink to={'/team'}>
-          <Menu>Team</Menu>
+          <Menu><b>Abouht</b> Team</Menu>
         </MenuLink>
-        <MenuLink to={'/UserApply'}>
-          <Menu>독자 사전 가입하기</Menu>
+        <MenuLink to={'/preview'}>
+          <Menu>Preview</Menu>
         </MenuLink>
-        
-        <Menu>로그인</Menu>
-        <Menu>회원가입</Menu>
-        <Menu>이달의 이벤트</Menu>
-        <Menu>개인정보 처리방침</Menu>
-        <MenuLink to={'/Term'}>
-          <Menu>이용약관</Menu>
+        <MenuLink to={'/support'}>
+          <Menu>고객지원</Menu>
         </MenuLink>
-        <Menu>상담하기[24시간]</Menu>
-        <Menu>제휴문의</Menu>
       </MenuContainer>
     </SideBarWrap>
   );
