@@ -13,6 +13,7 @@ import Launching from "./pages/Launching"
 import Term from "./pages/term/Term"
 import Release from "./pages/Release"
 import ScrollToTop from "./hooks/ScrollToTop"
+import ChannelService from "./ChannelService";
 
 const Container = styled.div`
   width: 980px;
@@ -25,6 +26,12 @@ const Container = styled.div`
 `
 
 const App = () => {
+	ChannelService.loadScript();
+	
+	ChannelService.boot({
+		pluginKey: "b53f3d16-fcec-46db-b538-21f2d5e41a13",
+	});
+	
   return (
     <BrowserRouter>
       <ScrollToTop />
